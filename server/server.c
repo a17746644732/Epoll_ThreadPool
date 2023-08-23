@@ -68,7 +68,6 @@ void communication(void* arg){
 	int epfd = info->epfd;
 	// 处理通信文件描述符
 	// 接收数据并在其尾部添加客户端fd后再发送给客户端
-	char buf[1024];
 	char temp[4096];
 	bzero(temp,sizeof(temp));
 	while(1){

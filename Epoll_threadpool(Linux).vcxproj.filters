@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="client">
+      <UniqueIdentifier>{66481a2a-8440-40ca-b29e-909d86b21da1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{a3c39416-2795-4c66-a973-2e6956252e31}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tcp_client.c">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp_server.c">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="threadpool.c">
+      <Filter>server</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="threadpool.h">
+      <Filter>server</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
